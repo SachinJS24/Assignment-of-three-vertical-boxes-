@@ -161,12 +161,19 @@ h2 {
 /* Css for box one and styles common for next two boxes starts here */
 
 .box {
-  /* height: 100px; */
+  height: 80px;
+  overflow: hidden;
+  transition: height 0.3s ease, background-color 0.3s ease;
   max-height: 350px;
   width: 400px;
   border-radius: 5px;
   border: solid black;
   margin: auto;
+}
+
+.box:hover {
+  background-color: #ddd;
+  height: 200px;
 }
 
 .Top-section-of-box {
@@ -279,7 +286,6 @@ h4 {
 /* Css for box two starts here */
 
 .box-second {
-  /* height: 100px; */
   max-height: 350px;
   width: 400px;
   border-radius: 5px;
@@ -291,7 +297,6 @@ h4 {
 
 /* Css for box three starts here */
 .box-third {
-  /* height: 100px; */
   max-height: 350px;
   width: 400px;
   border-radius: 5px;
@@ -300,12 +305,6 @@ h4 {
 }
 /* Css for box three ends here */
 
-/* Ensure only top section shows when box is shrunk */
-.box, .box-second, .box-third {
-  overflow: hidden;
-  height: 100px; /* Initial height */
-  transition: height 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
-}
 
 /* Hover background color */
 .box:hover, .box-second:hover, .box-third:hover {
